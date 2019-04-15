@@ -22,21 +22,21 @@ class GildedRose
 
       item.sell_in -= 1 unless item.name == SULFURAS
 
-      if item.sell_in < 0
-        if item.name != AGED_BRIE
-          if item.name != BACKSTAGE_PASSES
-            if item.quality > 0
-              if item.name != SULFURAS
-                item.quality -= 1
-              end
+      next if item.sell_in > 0
+
+      if item.name != AGED_BRIE
+        if item.name != BACKSTAGE_PASSES
+          if item.quality > 0
+            if item.name != SULFURAS
+              item.quality -= 1
             end
-          else
-            item.quality = 0
           end
         else
-          if item.quality < 50
-            item.quality += 1
-          end
+          item.quality = 0
+        end
+      else
+        if item.quality < 50
+          item.quality += 1
         end
       end
     end
