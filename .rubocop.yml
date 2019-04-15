@@ -1,0 +1,153 @@
+# Core
+# ====================
+
+AllCops:
+  TargetRubyVersion: 2.3
+
+# Lint
+# 0.47.1
+Lint/SafeNavigationChain:
+  Enabled: false
+
+# 0.48.0
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+# Rails
+Rails:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - staging
+
+# 0.50.0
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+# Style
+# ====================
+Style/NumericLiterals:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Style/MixinGrouping:
+  Enabled: false
+
+# 0.48.0
+Style/InverseMethods:
+  Enabled: false
+
+# 0.48.0
+Style/SymbolArray:
+  Enabled: false
+
+# 0.48.0
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/AlignParameters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  Exclude:
+    - 'spec/**/*'
+
+Style/MultilineIfModifier:
+  Enabled: false
+
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+# 0.63
+Layout/AlignHash:
+  Enabled: false
+
+# 0.63
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+# 0.63
+Style/YodaCondition:
+  Enabled: false
+
+# Metrics
+# ====================
+
+Metrics/ClassLength:
+  Max: 1000
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/BlockLength:
+  Max: 120
+  Exclude:
+    - 'config/routes.rb'
+    - 'spec/**/*'
+
+Metrics/MethodLength:
+  Max: 400
+
+Metrics/ModuleLength:
+  Max: 500
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/AbcSize:
+  Max: 70
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/PerceivedComplexity:
+  Max: 16
+
+Metrics/ParameterLists:
+  Enabled: false
