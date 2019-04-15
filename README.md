@@ -29,3 +29,4 @@ Feel free to make any changes to the `UpdateQuality` method and add any new code
 2. `cd gilded-rose`
 3. `bundle` to install dependencies
 4. `rspec` to ensure the tests run. You should see a failing test. 
+5. `ruby texttest_fixture.rb` to run the TextTest
