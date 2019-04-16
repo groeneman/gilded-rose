@@ -1,6 +1,6 @@
 # Setup
 
-*Assumes Ruby 2.6.2 and bundler is installed on your machine*
+*Assumes Ruby 2.6.2 and bundler are installed on your machine*
 
 1. Clone the repo from GitHub
 2. `cd gilded-rose`
