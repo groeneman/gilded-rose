@@ -23,7 +23,7 @@ Feel free to make any changes to the `UpdateQuality` method and add any new code
 
 # Setup
 
-*Assumes Ruby 2.3.x and bundler is installed on your machine*
+*Assumes Ruby 2.6.2 and bundler is installed on your machine*
 
 1. Clone the repo from GitHub
 2. `cd gilded-rose`
