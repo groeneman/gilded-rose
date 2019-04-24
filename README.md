@@ -2,7 +2,7 @@
 
 *Assumes Ruby 2.6.2 and bundler are installed on your machine*
 
-1. Clone the repo from GitHub
+1. Clone the repo from GitHub (`git clone git@github.com:groeneman/gilded-rose.git`)
 2. `cd gilded-rose`
 3. `bundle` to install dependencies
 4. `rspec` to ensure the tests run. You should see a failing test. 
