@@ -30,3 +30,5 @@
 - “Conjured” items degrade in `Quality` twice as fast as normal items
 
 Feel free to make any changes to the `UpdateQuality` method and add any new code as long as everything still works correctly. However, do not alter the `Item` class as it belongs to the goblin in the corner who will insta-rage as he doesn’t believe in shared code ownership.
+
+# [Slide Deck](https://docs.google.com/presentation/d/1vRrEkQvrQqNoQ5mY9MLzUKOqSKG2u_qis40jlg477zs)
